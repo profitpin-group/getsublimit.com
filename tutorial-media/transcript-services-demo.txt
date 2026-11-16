@@ -1,0 +1,86 @@
+SubLimit — Services demo: payroll, subcontracting limit and monthly workforce report
+Narrated walkthrough with a fictional facilities maintenance contractor (order FAC-DEMO-002, October 2026)
+
+00:00 — A fictional services contractor
+This demo uses fictional data: an invented facilities maintenance contractor and its records. On the Overview page, choose Open configuration and load the practice contract file.
+
+00:12 — Contract setup
+Contract setup shows order FAC-DEMO-002 for October 2026: a services contract under NAICS 561210.
+
+00:23 — Facts with evidence
+Each answer, such as whether FAR 52.219-14 applies, carries an evidence reference. Here they are marked synthetic.
+
+00:33 — Compliance period
+The compliance period is October 1 to 31, 2026, with a 5-point warning margin.
+
+00:41 — Organize people
+People & vendors gives every employee and vendor a stable ID. Seven fictional employees are listed.
+
+00:48 — Organize subcontractors
+Four subcontractors follow. Verification shows one verified similarly situated and three verified not similarly situated.
+
+00:57 — A similarly situated subcontractor
+Sample Janitorial Partners shows the facts behind its status: verified similarly situated, valid through 2026, first tier, and small under NAICS 561210.
+
+01:10 — Government receipts
+Government receipts holds the payment basis: $72,400 and $68,150, a total of $140,550.
+
+01:22 — Import the payroll export
+In Import & mapping, select payroll.xlsx under Payroll / timekeeping. The saved mapping matches each required field to its column heading.
+
+01:33 — Preview the payroll rows
+Preview first file shows the source rows. Line P108 belongs to another job, FAC-OTHER-009.
+
+01:42 — Import subcontractor payments
+Then select subcontractors.xlsx, mapped for amount paid, further subcontracted amounts, hours and materials.
+
+01:52 — Subcontractor payments
+Besides the October payments, it includes a payment on the other job and one dated November 3.
+
+01:58 — Import and calculate
+Choose Import and calculate. Processing stays on this computer.
+
+02:04 — Monitor the limit
+Results shows COMPLIANT for the final October period, against a 50% limit.
+
+02:10 — Percentage against the limit
+Counted subcontracting is $59,150 against $140,550 in eligible Government payments: 42.08%, about eight points under the limit.
+
+02:26 — Monthly workforce totals
+Workforce totals: 7 prime employees with 928 work hours, and 650 subcontractor work hours.
+
+02:35 — What was counted
+Each counted record is listed. Payments to the three subcontractors that are not similarly situated count in full.
+
+02:43 — The similarly situated subcontractor
+For the similarly situated subcontractor, record S102, only the $3,500 it further subcontracted counts.
+
+02:53 — Trace to the source row
+Double-click a row to trace it to the worksheet, row and original values: a $21,000 payment, with $3,500 further subcontracted.
+
+03:04 — Rows kept, not counted
+View all source rows shows the other-job payment excluded as other contract, and the November payment excluded as outside the period.
+
+03:12 — Exceptions
+Exceptions is empty for this sample. Check it on every run.
+
+03:18 — Monthly workforce report
+For the monthly workforce report, open OCC workforce report and choose Import staffing file to load staffing.json.
+
+03:27 — Workers and hours
+13 worker lines load, with all imported hours reconciled.
+
+03:32 — Subcontractor workers
+Subcontractor workers are listed with their employer and hours. In total, 1,578 hours: 928 prime and 650 subcontractor.
+
+03:44 — Contractor facts
+Contractor facts holds the fictional UEI, company name and contract number, plus the form confirmations.
+
+03:52 — Export the unsigned draft
+Export unsigned Word draft saves the draft locally, and the status line confirms it was verified.
+
+03:59 — The draft document
+The draft says Unsigned draft, review required, and the signature line is blank. Your authorized officer reviews, signs and submits it. SubLimit does not file anything.
+
+04:12 — Recap
+Organize the records, monitor the limit, prepare the workforce draft. SubLimit by ProfitPin Group is in the Microsoft Store with a 30-day trial.
