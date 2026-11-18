@@ -1,4 +1,5 @@
-/* First-touch campaign/search attribution, retained for 90 days. No visitor ID.
+/* First-touch campaign/search attribution, retained for 90 days. No visitor ID; a company code (ref=e-...) is
+ * present only when the visitor followed a link from an email we sent to that business.
  * The existing first-party page counter receives only a referrer origin (no search
  * terms or referrer query string). Attribution follows approved signup links. */
 (function () {
@@ -24,6 +25,8 @@
     if (source) fresh = { utm_source: source, utm_campaign: 'organic-search', ref: location.pathname.slice(0, 120) };
   }
   var lead = read();
+  // A company code from one of our own emails (ref=e-...) always wins, so the dashboard can show which business visited.
+  if (fresh.ref && /^e-[a-z0-9-]{3,60}$/.test(fresh.ref) && (!lead || lead.ref !== fresh.ref)) lead = null;
   if (!lead && Object.keys(fresh).length) {
     fresh.at = Date.now(); lead = fresh;
     try { localStorage.setItem(STORE, JSON.stringify(lead)); } catch (_) {}
@@ -35,6 +38,11 @@
       var q = new URLSearchParams({s: location.hostname, p: location.pathname, f: first,
         r: referrer ? referrer.origin : '', u: lead && lead.utm_source || '', t: String(Date.now())});
       new Image().src = 'https://license.getsaleledger.com/growth/hit?' + q;
+      if (lead && /^e-[a-z0-9-]{3,60}$/.test(lead.ref || '')) {
+        var qc = new URLSearchParams({s: location.hostname, p: '/@co/' + lead.ref + location.pathname, f: '0',
+          r: '', u: lead.utm_source || '', t: String(Date.now())});
+        new Image().src = 'https://license.getsaleledger.com/growth/hit?' + qc;
+      }
     }
   } catch (_) {}
   if (!lead) return;
