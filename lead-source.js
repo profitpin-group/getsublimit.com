@@ -42,6 +42,16 @@
         var qc = new URLSearchParams({s: location.hostname, p: '/@co/' + lead.ref + location.pathname, f: '0',
           r: '', u: lead.utm_source || '', t: String(Date.now())});
         new Image().src = 'https://license.getsaleledger.com/growth/hit?' + qc;
+        // A real reader: stays 10 seconds and scrolls, taps or moves the mouse. Email link scanners don't.
+        var start = Date.now(), sent = false;
+        var human = function () {
+          if (sent || Date.now() - start < 10000 || document.hidden) return;
+          sent = true;
+          var qr = new URLSearchParams({s: location.hostname, p: '/@co/' + lead.ref + '/read' + location.pathname, f: '0',
+            r: '', u: lead.utm_source || '', t: String(Date.now())});
+          new Image().src = 'https://license.getsaleledger.com/growth/hit?' + qr;
+        };
+        ['scroll', 'pointermove', 'touchstart', 'keydown'].forEach(function (e) { addEventListener(e, human, {passive: true}); });
       }
     }
   } catch (_) {}
