@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:08.230
+Before the walkthrough, here is how you get SubLimit. On getsublimit.com, click Get started.
+
+00:00:08.530 --> 00:00:17.410
+Download the Windows installer from the start page and run it once. A SubLimit icon appears on your desktop.
+
+00:00:17.710 --> 00:00:24.350
+The first time it opens, read the one-time agreement, tick the box, and click I agree.
+
+00:00:24.650 --> 00:00:45.310
+Then sign in with your business email. SubLimit emails you a code; enter it, and checkout opens in your browser. Thirty days free, then one hundred forty-nine dollars a month until you cancel. Your subscription covers two Windows computers. Now the walkthrough begins.
+
+00:00:45.610 --> 00:00:47.103
+Welcome to SubLimit.
+
+00:00:47.403 --> 00:00:52.118
+This walkthrough uses real application screens and fictional practice records.
+
+00:00:52.418 --> 00:00:54.722
+Pause whenever you want to follow along.
+
+00:00:55.810 --> 00:00:59.650
+Download and extract the practice files from the tutorial page.
+
+00:00:59.950 --> 00:01:06.051
+In a separate practice workspace, choose Open configuration and select contract dot JSON.
+
+00:01:07.143 --> 00:01:12.306
+Contract setup contains the reporting month, contract category, and program details.
+
+00:01:12.606 --> 00:01:14.526
+The sample is already filled in.
+
+00:01:14.826 --> 00:01:18.047
+Your own contract needs its own verified facts.
+
+00:01:19.143 --> 00:01:23.709
+Confirm whether the FAR clause applies, and record the supporting evidence.
+
+00:01:24.009 --> 00:01:27.678
+If you are unsure, leave the answer blank and seek clarification.
+
+00:01:28.743 --> 00:01:30.855
+Next, review People and vendors.
+
+00:01:31.155 --> 00:01:34.953
+Use stable identities and documented subcontractor status.
+
+00:01:35.253 --> 00:01:40.181
+A similar name does not establish identity or similarly situated status.
+
+00:01:41.277 --> 00:01:43.965
+Government receipts supplies the payment basis.
+
+00:01:44.265 --> 00:01:49.513
+In this fictional example, eligible government payments total one hundred thousand dollars.
+
+00:01:49.813 --> 00:01:52.031
+Payroll cost is a separate measure.
+
+00:01:53.143 --> 00:01:54.850
+Open Import and mapping.
+
+00:01:55.150 --> 00:02:04.601
+Under payroll and timekeeping, choose Select CSV or XLSX files, and select payroll dot XLSX from the practice folder.
+
+00:02:05.677 --> 00:02:08.151
+The sample includes saved column mappings.
+
+00:02:08.451 --> 00:02:14.809
+Check the worksheet name, header row, date format, and exact column headings before importing your own files.
+
+00:02:15.877 --> 00:02:19.695
+Choose Preview first file to see the original headings and rows.
+
+00:02:19.995 --> 00:02:24.881
+Check the worker identifiers, job numbers, dates, and hours against your mapping.
+
+00:02:25.943 --> 00:02:28.738
+Scroll down to Subcontractor payments and time.
+
+00:02:29.038 --> 00:02:34.179
+Select subcontractors dot XLSX in this section, and check its mapping too.
+
+00:02:35.277 --> 00:02:39.458
+When both files and mappings are ready, choose Import and calculate.
+
+00:02:39.758 --> 00:02:43.939
+SubLimit processes the reporting files locally on your computer.
+
+00:02:45.010 --> 00:02:49.917
+The sample result counts eighteen thousand four hundred twenty dollars of subcontracting.
+
+00:02:51.010 --> 00:02:55.234
+The eligible government payment basis is one hundred thousand dollars.
+
+00:02:56.343 --> 00:03:01.719
+Dividing the counted amount by that payment basis gives eighteen point four two percent.
+
+00:03:02.019 --> 00:03:06.073
+The sample is compliant against its configured fifty percent limit.
+
+00:03:07.143 --> 00:03:10.834
+To examine the evidence, double click a payment contribution.
+
+00:03:11.134 --> 00:03:12.862
+Here we open the first row.
+
+00:03:13.943 --> 00:03:18.679
+The detail shows the source worksheet, row number, field, and original value.
+
+00:03:18.979 --> 00:03:23.182
+Use this trace to reconcile a result with the spreadsheet that produced it.
+
+00:03:24.277 --> 00:03:26.431
+Now let us try an incomplete fact.
+
+00:03:26.731 --> 00:03:33.238
+For this exercise only, leave the contract applicability answer blank, then import and calculate again.
+
+00:03:34.343 --> 00:03:39.229
+SubLimit now shows Review required and leaves the calculation unavailable.
+
+00:03:39.529 --> 00:03:41.705
+It does not guess that the clause applies.
+
+00:03:42.810 --> 00:03:45.541
+Open Exceptions to see what needs attention.
+
+00:03:45.841 --> 00:03:50.555
+Use Edit contract facts to correct the confirmed facts, then calculate again.
+
+00:03:50.855 --> 00:03:54.077
+Obtain evidence before changing an unknown answer.
+
+00:03:55.143 --> 00:03:58.429
+The OCC workforce report is a separate workflow.
+
+00:03:58.729 --> 00:04:01.843
+Confirm that your contract requires this form revision.
+
+00:04:02.143 --> 00:04:06.666
+Its personnel and hours are separate from the FAR payment calculation.
+
+00:04:07.743 --> 00:04:16.746
+After restoring the sample confirmation and recalculating, choose Import staffing file and open staffing dot JSON from the practice folder.
+
+00:04:17.810 --> 00:04:22.354
+This example has ten worker lines, with all imported hours reconciled.
+
+00:04:22.654 --> 00:04:27.027
+Review the workers, hours, and contractor facts before preparing the draft.
+
+00:04:28.143 --> 00:04:31.365
+Save the staffing draft to keep it with workspace backups.
+
+00:04:31.665 --> 00:04:35.249
+Use Export unsigned Word draft to prepare the document.
+
+00:04:35.549 --> 00:04:39.005
+Inspect every page, including continuation pages.
+
+00:04:40.077 --> 00:04:46.199
+Your authorized officer remains responsible for reviewing, certifying, and submitting the report.
+
+00:04:46.499 --> 00:04:50.297
+The application prepares the draft and does not sign on your behalf.
+
+00:04:51.410 --> 00:04:55.442
+Back in Results, Export package lets you save the reporting output.
+
+00:04:55.742 --> 00:05:00.563
+Store exported files securely, along with the evidence your organization needs.
+
+00:05:01.677 --> 00:05:05.645
+History preserves earlier runs, including the incomplete example.
+
+00:05:05.945 --> 00:05:09.614
+Select a run and choose Open selected run to revisit it.
+
+00:05:10.677 --> 00:05:15.861
+In Backup and restore, create a local backup and test restoring into a new folder.
+
+00:05:16.161 --> 00:05:20.769
+For business records, use a protected workspace and keep its passphrase safely.
+
+00:05:21.877 --> 00:05:24.757
+SubLimit cannot recover a forgotten password.
+
+00:05:25.057 --> 00:05:29.387
+Original input files and exported reports need their own protection.
+
+00:05:29.687 --> 00:05:32.546
+Keep practice files separate from business records.
+
+00:05:33.610 --> 00:05:38.495
+You have now seen how to import, check, trace, and preserve a reporting period.
+
+00:05:38.795 --> 00:05:43.830
+Use the written walkthrough and practice files on the tutorial page to try it yourself.
